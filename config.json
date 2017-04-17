@@ -1,0 +1,18 @@
+// 将设置放入此文件中以覆盖默认设置
+{
+  "typescript.tsdk": "/usr/local/lib/node_modules/typescript/lib",
+  "editor.tabSize": 2,
+  "editor.fontSize": 10,
+  "editor.fontWeight": "200",
+  "window.zoomLevel": 0,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Monokai",
+  "emmet.syntaxProfiles": { "javascript": "jsx" },
+  "editor.fontFamily": "Monaco",
+  "editor.minimap.enabled": true,
+  "editor.scrollBeyondLastLine": false,
+  "files.autoSave": "onFocusChange",
+  "react.beautify.onSave": false,
+  "vsicons.projectDetection.autoReload": true,
+  "material-icon-theme.showUpdateMessage": false
+}

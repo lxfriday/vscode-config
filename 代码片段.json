@@ -1,0 +1,167 @@
+{
+/*
+	 // Place your snippets for JavaScript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	 // same ids are connected.
+	 // Example:
+*/
+	
+	// 打印
+	 "Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log($1)"
+			// "$2"
+		],
+		"description": "Log output to console"
+	},
+
+	//箭头函数
+	"arrow function": {
+		"prefix": "func",
+		"body": [
+			"(${e}) => {$1}"
+		],
+		"description": "arrow function"
+	},
+
+	//属性自动出现等号和右边的{}
+	"style={{}}": {
+		"prefix": "shee",
+		"body": [
+			"style={{$1}}"
+		],
+		"description": "style={{}"
+	},
+
+	// jsx的注释
+	"desc": {
+		"prefix": "desc",
+		"body": [
+			"{/*${1}*/}"
+		],
+		"description": "desc"
+	},
+
+	// const _that = this;
+	"const => this": {
+		"prefix": "ct",
+		"body": [
+			"const _that = this;"
+		],
+		"description": "把this赋值给_that"
+	},
+
+	// _that.state.${1}
+	"_that.state.${1}": {
+		"prefix": "__",
+		"body": [
+			"_that.state.${1}"
+		],
+		"description": "_that.state.${1}"
+	},
+
+	"generate React class": {
+		"prefix": "rnc",
+		"body": [
+			"import React, { Component } from 'react';",
+		  "import {",
+			"	View,",
+			"	Text,",
+			"	StyleSheet,",
+			"} from 'react-native';",
+			"",
+			"export default class MyClass${1} extends Component {",
+			"	render() {",
+			"		return (",
+			"			<View style={styles.${2}container}>",
+			"				<Text>${3}</Text>",
+			"			</View>",
+			"		);",
+			"	}",
+			"}",
+			"",
+			"const styles = StyleSheet.create({",
+			"	${4}container: {",
+			"		flex: 1,",
+			"	},",
+			"});"
+		],
+		"description": "产生React Class"
+	},
+
+	"import A from " :{
+		"prefix": "ii",
+		"body": [
+			"import ${1} from '${2}'"
+		],
+		"description": "import A from "
+	},
+
+	"import {A} from " :{
+		"prefix": "iii",
+		"body": [
+			"import { ${1} } from '${2}'"
+		],
+		"description": "import {A} from "
+	},
+
+	"const {} = this." :{
+		"prefix": "cc",
+		"body": [
+			"const {${1}} = this.${2};"
+		],
+		"description": "const {} = this.;"
+	},
+
+	"this.setState({});" :{
+		"prefix": "sS",
+		"body": [
+			"this.setState({${1}});"
+		],
+		"description": "this.setState({});"
+	},
+
+	"constructor(props)" :{
+		"prefix": "cp",
+		"body": [
+			"constructor(props) {",
+			"	super(props);",
+			"	this.state = {",
+			"		${1}",
+			"	};",
+			"}",
+		],
+		"description": "constructor(props)"
+	},
+
+	"material-community" :{
+		"prefix": "mc",
+		"body": [
+			"material-community"
+		],
+		"description": "material-community"
+	},
+
+	"const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});" :{
+		"prefix": "ds1",
+		"body": [
+			"const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});"
+		],
+		"description": "const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});"
+	},
+
+	"this.setState({dataSource: this.state.dataSource.cloneWithRows(this._data)});" :{
+		"prefix": "ds2",
+		"body": [
+			"this.setState({dataSource: this.state.dataSource.cloneWithRows(this._data)});"
+		],
+		"description": "this.setState({dataSource: this.state.dataSource.cloneWithRows(this._data)});"
+	},
+
+
+
+
+	
+}
