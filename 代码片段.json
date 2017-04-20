@@ -110,7 +110,9 @@
 	"const {} = this." :{
 		"prefix": "cc",
 		"body": [
-			"const {${1}} = this.${2};"
+			"const {",
+			"	${1}",
+			"} = this.${2};"
 		],
 		"description": "const {} = this.;"
 	},
@@ -160,8 +162,32 @@
 		"description": "this.setState({dataSource: this.state.dataSource.cloneWithRows(this._data)});"
 	},
 
+	"propTypes and defaultProps" :{
+		"prefix": "pad",
+		"body": [
+			"${1}.propTypes = {",
+			"	${2}",
+			"};",
+			"${2}.defaultProps = {",
+			"	${3}",
+			"};"
+		],
+		"description": "propTypes and defaultProps"
+	},
 
-
+	"AsyncStorage.param().then().catch(err => console.log(err))" :{
+		"prefix": "ass",
+		"body": [
+			"AsyncStorage",
+			"	.${1}('${2}')",
+			"	.then(data => JSON.parse(data))",
+			"	.then(data => {",
+			"		${2}",
+			"	})",
+			"	.catch(err => console.log(err))"
+		],
+		"description": "AsyncStorage.param().then().catch(err => console.log(err));"
+	}
 
 	
 }
